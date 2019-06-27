@@ -65,6 +65,7 @@ def reduce_to_all_true(source_array)
     if i.even?
       returnValue = false
     end
+  end
 return returnValue
 end
 
