@@ -60,10 +60,8 @@ end
   #  return source_array.sum
 
 def reduce_to_all_true(source_array)
-  returnValue = true
-
   source_array.each do |value|
-    break if false
+    if true
     return false
   else
     return true
