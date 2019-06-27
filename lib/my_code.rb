@@ -67,7 +67,7 @@ def reduce_to_all_true(source_array)
     i += 1
   end
   newArray.sort
-  if newArray[0] = false
+  if newArray[0] = false || nil
     return false
   end
   return true
