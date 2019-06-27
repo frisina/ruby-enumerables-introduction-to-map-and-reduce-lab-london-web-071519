@@ -63,7 +63,7 @@ def reduce_to_all_true(source_array)
   returnValue = false
 
   source_array.each do |value|
-    break if value.true?
+    break if true
     returnValue = true
   end
   return returnValue
