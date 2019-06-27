@@ -86,6 +86,6 @@ def reduce_to_any_true(source_array)
   end
   return returnValue
 end
-  
+
   #source_array.any?
 end
