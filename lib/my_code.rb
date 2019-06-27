@@ -60,18 +60,12 @@ end
   #  return source_array.sum
 
 def reduce_to_all_true(source_array)
-  i = 0;
-  newArray = []
-  while source_array[i] do
-    newArray.push(source_array[i].to_bool)
-    i += 1
-  end
-
-  if source_array
-    return true
-  else
-    return false
+  all_odd = true
+  source_array.each do |number|
+    if number.even?
+      all_odd = false
     end
+    all_odd
 end
 
   #source_array.all?
