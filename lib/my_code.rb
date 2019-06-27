@@ -60,11 +60,11 @@ end
   #  return source_array.sum
 
 def reduce_to_all_true(source_array)
-  returnValue = true
+  returnValue = false
 
   source_array.each do |value|
     break if value.even?
-    returnValue = false
+    returnValue = true
   end
   return returnValue
 end
