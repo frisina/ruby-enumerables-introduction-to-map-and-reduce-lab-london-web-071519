@@ -64,7 +64,7 @@ end
     returnValue = true
 
     while source_array[i] < source_array.length do
-      if (!source_array[i] == false)
+      if (!!source_array[i] == false)
         returnValue = false
       end
         i += 1
