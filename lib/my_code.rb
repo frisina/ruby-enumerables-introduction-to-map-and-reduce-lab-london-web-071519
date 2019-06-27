@@ -70,8 +70,9 @@ def reduce_to_all_true(source_array)
   
   if newArray[0] = false || nil
     return false
-  end
+  else
   return true
+end
 end
 
   #source_array.all?
