@@ -65,8 +65,9 @@ def reduce_to_all_true(source_array)
   while source_array[i] do
     newArray.push(!!source_array[i])
     i += 1
+    newArray.sort
   end
-  newArray.sort
+  
   if newArray[0] = false || nil
     return false
   end
