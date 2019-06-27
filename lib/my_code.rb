@@ -65,6 +65,7 @@ def reduce_to_all_true(source_array)
     if number.even?
       all_odd = false
     end
+  end
     all_odd
 end
 
