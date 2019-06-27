@@ -59,18 +59,11 @@ end
   #  else
   #  return source_array.sum
 
-def reduce_to_all_true(source_array)
-  i = 0;
-  newArray = []
-  while source_array[i] do
-    if source_array[i] = false
-      return false
-    else
-      return true
-    end
-    i += 1
+  def reduce_to_all_true(source_array)
+  	source_array.reduce do |a, b|
+  		!!a && !!b
+      end
   end
-end
 
   #source_array.all?
 
