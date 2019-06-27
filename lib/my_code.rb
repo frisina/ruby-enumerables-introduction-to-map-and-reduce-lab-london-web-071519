@@ -61,11 +61,11 @@ end
 
 def reduce_to_all_true(source_array)
   i = 0;
-  returnValue = true
+  returnValue = false
 
   while source_array[i] do
-    if (!!source_array[i] == false)
-      returnValue = false
+    if (source_array[i] > 0)
+      returnValue = true
     end
       i += 1
   end
