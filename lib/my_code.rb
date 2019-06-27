@@ -67,10 +67,10 @@ def reduce_to_all_true(source_array)
     i += 1
   end
   newArray.sort
-  if newArray[0] = true
-    return true
+  if newArray[0] = false
+    return false
   end
-  return false
+  return true
 end
 
   #source_array.all?
