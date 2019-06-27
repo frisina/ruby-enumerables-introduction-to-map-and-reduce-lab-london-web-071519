@@ -75,5 +75,17 @@ end
 
 
 def reduce_to_any_true(source_array)
+  i = 0;
+  returnValue = false
+
+  while i < source_array.length do
+    if (!!source_array[i] == true)
+      returnValue = true
+    end
+      i += 1
+  end
+  return returnValue
+end
+  
   #source_array.any?
 end
