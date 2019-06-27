@@ -64,6 +64,7 @@ def reduce_to_all_true(source_array)
     break if value = false
     return false
     end
+    return true
 end
 
   #source_array.all?
