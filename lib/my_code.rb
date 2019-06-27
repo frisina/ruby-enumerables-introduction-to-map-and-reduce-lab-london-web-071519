@@ -60,13 +60,11 @@ end
   #  return source_array.sum
 
 def reduce_to_all_true(source_array)
-  all_odd = true
-  source_array.each do |number|
-    if number.even?
-      all_odd = false
-    end
-  end
-    all_odd
+  source_array.each do |value|
+    break if value.even?
+    return false
+end
+  return true
 end
 
   #source_array.all?
