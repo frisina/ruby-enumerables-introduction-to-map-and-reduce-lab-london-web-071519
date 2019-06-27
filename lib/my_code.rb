@@ -61,7 +61,6 @@ end
 
 def reduce_to_all_true(source_array)
   i = 0;
-  newArray = []
   returnValue = true
 
   while source_array[i] do
