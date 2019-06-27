@@ -62,17 +62,13 @@ end
 def reduce_to_all_true(source_array)
   i = 0;
   newArray = []
-  while source_array[i] do
-    newArray.push(!!source_array[i])
-    i += 1
-    newArray.sort
-  end
 
-  if newArray[0] = false || nil
-    return false
-  else
+  while source_array[i] do
+    if source_array[i] = false
+      return false
+      i += 1
+  end
   return true
-end
 end
 
   #source_array.all?
