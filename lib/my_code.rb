@@ -1,31 +1,78 @@
 # My Code here....
 def map_to_negativize(source_array)
-  source_array.map {|n| n * -1}
+  i = 0;
+  newArray = [];
+  while source_array[i] do
+    newArray.push(source_array[i] * -1)
+    i += 1
+  end
+  return newArray
+  #source_array.map {|n| n * -1}
 end
 
 def map_to_no_change(source_array)
-  source_array.map {|n| n}
+  i = 0;
+  newArray = [];
+  while source_array[i] do
+    newArray.push(source_array[i])
+    i += 1
+  end
+  return newArray
 end
 
+  #source_array.map {|n| n}
+
+
 def map_to_double(source_array)
-  source_array.map {|n| n * 2}
+  #source_array.map {|n| n * 2}
+  i = 0;
+  newArray = [];
+  while source_array[i] do
+    newArray.push(source_array[i] * 2)
+    i += 1
+  end
+  return newArray
 end
 
 def map_to_square(source_array)
-  source_array.map {|n| n * n}
+  i = 0;
+  newArray = []
+  while source_array[i] do
+    newArray.push(source_array[i] * source_array[i])
+    i += 1
+  end
+  return newArray
 end
+  #source_array.map {|n| n * n}
 
-def reduce_to_total(source_array, starting_point)
+def reduce_to_total(source_array, starting_point=0)
+  returnValue = 0
+
   if starting_point
-    return source_array.reduce(starting_point) { |sum, n| sum + n }
+      returnValue = source_array.inject(starting_point, :+)
   else
-    return source_array.sum
+      returnValue = source_array.inject(0, :+)
+  end
+    return returnValue
 end
+  #  return source_array.reduce(starting_point) { |sum, n| sum + n }
+  #  else
+  #  return source_array.sum
 
 def reduce_to_all_true(source_array)
-  source_array.all?
+  i = 0
+  while source_array[i]
+    if source_array[i].odd?
+      break
+    elsif source_array[i].even?
+      return true
+    end
+    i += 1
+  end
+
+  #source_array.all?
 end
 
 def reduce_to_any_true(source_array)
-  source_array.any?
+  #source_array.any?
 end
